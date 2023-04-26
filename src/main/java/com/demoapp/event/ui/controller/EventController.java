@@ -4,8 +4,6 @@ import com.demoapp.event.dto.EventDto;
 import com.demoapp.event.service.EventService;
 import com.demoapp.event.ui.model.CreateEvent;
 import com.demoapp.event.ui.model.GetEvent;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,6 +11,8 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.stream.Collectors;
 

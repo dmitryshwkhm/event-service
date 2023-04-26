@@ -1,12 +1,9 @@
 package com.demoapp.event.data.model;
 
-import jakarta.persistence.*;
-import jakarta.validation.constraints.Email;
-import lombok.Generated;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.sql.Timestamp;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
