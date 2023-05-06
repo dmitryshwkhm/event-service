@@ -16,6 +16,7 @@
     <properties>
         <java.version>11</java.version>
         <io.spring.dependency-management>1.1.0</io.spring.dependency-management>
+        <sonar.host.url>http://localhost:9000/</sonar.host.url>
     </properties>
     <dependencies>
         <dependency>
@@ -82,6 +83,15 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+
+        <dependency>
+            <groupId>org.sonarsource.scanner.maven</groupId>
+            <artifactId>sonar-maven-plugin</artifactId>
+            <version>3.6.0.1398</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
