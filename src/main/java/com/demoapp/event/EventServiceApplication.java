@@ -19,6 +19,7 @@ public class EventServiceApplication {
     public ModelMapper ModelMapper() {
         ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
+        System.out.println("ok");
         return modelMapper;
     }
 
