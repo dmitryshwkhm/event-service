@@ -7,6 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
+import java.math.BigDecimal;
+
 @SpringBootApplication
 //@EnableSwagger2
 public class EventServiceApplication {
@@ -20,6 +22,8 @@ public class EventServiceApplication {
         ModelMapper modelMapper = new ModelMapper();
         modelMapper.getConfiguration().setMatchingStrategy(MatchingStrategies.STRICT);
         System.out.println("ok");
+        BigDecimal bigDecimal = new BigDecimal(2.1);
+        byte byteValue = bigDecimal.byteValue();
         return modelMapper;
     }
 
